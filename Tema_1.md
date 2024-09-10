@@ -133,7 +133,7 @@
 
 ## 15 Настройка gitignore
 
-![Меню]()
+![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/4.png)
 
 ### Выводы
 
