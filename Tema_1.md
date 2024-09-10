@@ -119,13 +119,13 @@
 
 ## 13 Исправление коммита
 
-![Меню]()
+![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/2.png)
 
 ### Выводы
 
 ## 14 Разрешение конфликтов при слиянии
 
-![Меню]()
+![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/3.png)
 
 ### Выводы
 
