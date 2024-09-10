@@ -103,7 +103,7 @@
 
 ## 11 Возвращение файла к предыдущему (определённому) состоянию
 
-![Меню]()
+![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/1.png)
 
 ### Выводы
 
@@ -111,7 +111,7 @@
 
 ## 12 Возвращение к предыдущему коммиту
 
-![Меню]()
+![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/1.png)
 
 ### Выводы
 
