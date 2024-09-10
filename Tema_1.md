@@ -31,7 +31,7 @@
 
 ## 2 Настройка
 
-![Меню](https://github.com/SnowyPython/SoftwareEngineering/tree/%D0%A2%D0%B5%D0%BC%D0%B0_1/images/profileGit.png)
+![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitList.png)
 
 ### Выводы
 
