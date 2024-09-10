@@ -79,7 +79,7 @@
 
 ## 8 Особенности применения "Фетч"
 
-![Меню](https://github.com/SnowyPython/SoftwareEngineering/tree/%D0%A2%D0%B5%D0%BC%D0%B0_1/images/fetch.png)
+![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitStatis.png)
 
 ### Выводы
 
@@ -87,8 +87,8 @@
 
 ## 9 Удаление файлов, веток, локальных и удалённых репозиториев
 
-![Меню](https://github.com/SnowyPython/SoftwareEngineering/tree/%D0%A2%D0%B5%D0%BC%D0%B0_1/images/deleteBreanch.png)
-![Меню](https://github.com/SnowyPython/SoftwareEngineering/tree/%D0%A2%D0%B5%D0%BC%D0%B0_1/images/pushDelete.png)
+![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitAmmend.png)
+
 
 ### Выводы
 
@@ -96,7 +96,7 @@
 
 ## 10 Отслеживание изменений в коммитах
 
-![Меню](https://github.com/SnowyPython/SoftwareEngineering/tree/%D0%A2%D0%B5%D0%BC%D0%B0_1/images/commit.png)
+![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitCommit.png)
 
 ### Выводы
 
@@ -104,7 +104,7 @@
 
 ## 11 Возвращение файла к предыдущему (определённому) состоянию
 
-![Меню](https://github.com/SnowyPython/SoftwareEngineering/tree/%D0%A2%D0%B5%D0%BC%D0%B0_1/images/commit.png)
+![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitCommit.png)
 
 ### Выводы
 
@@ -112,7 +112,7 @@
 
 ## 12 Возвращение к предыдущему коммиту
 
-![Меню](https://github.com/SnowyPython/SoftwareEngineering/tree/%D0%A2%D0%B5%D0%BC%D0%B0_1/images/commit.png)
+![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/1.png)
 
 ### Выводы
 
@@ -120,13 +120,13 @@
 
 ## 13 Исправление коммита
 
-![Меню](https://github.com/SnowyPython/SoftwareEngineering/tree/%D0%A2%D0%B5%D0%BC%D0%B0_1/images/edit.png)
+![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/2.png)
 
 ### Выводы
 
 ## 14 Разрешение конфликтов при слиянии
 
-![Меню](https://github.com/SnowyPython/SoftwareEngineering/tree/%D0%A2%D0%B5%D0%BC%D0%B0_1/images/merge.png)
+![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/3.png)
 
 ### Выводы
 
@@ -134,7 +134,7 @@
 
 ## 15 Настройка gitignore
 
-![Меню](https://github.com/SnowyPython/SoftwareEngineering/tree/%D0%A2%D0%B5%D0%BC%D0%B0_1/images/gitignore.png)
+![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/4.png)
 
 ### Выводы
 
