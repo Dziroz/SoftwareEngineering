@@ -71,7 +71,7 @@
 
 ## 7 Ветвление
 
-![Меню](https://github.com/SnowyPython/SoftwareEngineering/tree/%D0%A2%D0%B5%D0%BC%D0%B0_1/images/merge.png)
+![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitSwitch.png)
 
 ### Выводы
 
