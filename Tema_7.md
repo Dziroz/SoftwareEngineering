@@ -416,7 +416,7 @@ print("Результат:", censored_sentence)
 ```
 ### Результат.
 
-![Меню](images/s-task1.png)
+![Меню](images/s-task4.png)
 
 ### Выводы
 
