@@ -1,147 +1,383 @@
-# Тема 1. Введение в Python
-Отчет по Теме #1 выполнил:
-- Абсалямов Данил Эдурдович
+# Тема 8. Основы объектно-ориентированного программирования
+Отчет по Теме #8 выполнил:
+- Абсалямов Данил Эдуардович
 - ПИЭ-22-1
 
 | Задание | Лаб_раб | Сам_раб |
-| ------ | ------ | ------ |
-| Задание 1 | + | - |
-| Задание 2 | - | - |
-| Задание 3 | - | - |
-| Задание 4 | - | - |
-| Задание 5 | - | - |
-| Задание 6 | - | - |
-| Задание 7 | - | - |
-| Задание 8 | - | - |
-| Задание 9 | - | - |
-| Задание 10 | - | - |
+| ------ |---------|---------|
+| Задание 1 | +       | +       |
+| Задание 2 | +       | +       |
+| Задание 3 | +       | +       |
+| Задание 4 | +       | +       |
+| Задание 5 | +       | +       |
 
 знак "+" - задание выполнено; знак "-" - задание не выполнено;
 
 Работу проверили:
 - к.э.н., доцент Панов М.А.
 
-## 1 Установка
+## Лабораторная работа №1
+### Создайте класс “Car” с атрибутами производитель и модель. Создайте
+### объект этого класса. Напишите комментарии для кода, объясняющие
+### его работу. Результатом выполнения задания будет листинг кода с
+### комментариями.
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitVersion.png)
+```python
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
 
-### Выводы
+my_car = Car("Toyota", "Corolla")
+```
+### Результат.
 
-Уже был установлен git
-
-## 2 Настройка
-
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitList.png)
-
-### Выводы
-
-Уже был настроен git
-
-## 3 Создание нового репозитория
-
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitAdd.png)
+![Меню](images/task1.png)
 
 ### Выводы
 
-Создал новый репозиторий
+Создали класс “Car” с атрибутами производитель и модель.
 
-## 4 Подготовка файлов
+## Лабораторная работа №2
+### Дополните код из первого задания, добавив в него атрибуты и методы
+### класса, заставьте машину “поехать”. Напишите комментарии для кода, объясняющие его работу. Результатом выполнения задания будет
+### листинг кода с комментариями и получившийся вывод в консоль.
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitCommit.png)
+```python
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
 
-### Выводы
+    def drive(self):
+        print(f"Driving the {self.make} {self.model}")
 
-Добавил файлы при помощи add, проверил добавленные файлы при помощи Status, выполнил Commit
+my_car = Car("Toyota", "Corolla")
+my_car.drive()
+```
+### Результат.
 
-## 5 Фиксация изменений
-
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitPush.png)
-
-### Выводы
-
-Отправляем файлы при помощи push, так же можем посмотреть историю каммитов при помощи git log
-
-## 6 Подключение к удаленному репозиторию
-
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitPush.png)
-
-### Выводы
-
-Подключаем к локальному репозиторию удаленных при помощи remote
-
-## 7 Ветвление
-
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitSwitch.png)
+![Меню](images/task2.png)
 
 ### Выводы
 
-здесь я произвел создание ветки, слияние ветвей
+добавили метод drive
 
-## 8 Особенности применения "Фетч"
+## Лабораторная работа №3
+### Создайте новый класс “ElectricCar” с методом “charge” и атрибутом
+### емкость батареи. Реализуйте его наследование от класса, созданного в
+### первом задании. Заставьте машину поехать, а потом заряжаться.
+### Результатом выполнения задания будет листинг кода с комментариями
+### и получившийся вывод в консоль.
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitStatis.png)
+```python
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
 
-### Выводы
+    def drive(self):
+        print(f"Driving the {self.make} {self.model}")
 
-Пробуем фетч
+class ElectricCar(Car):
+    def __init__(self, make, model, battery_capacity):
+        super().__init__(make, model)
+        self.battery_capacity = battery_capacity
 
-## 9 Удаление файлов, веток, локальных и удалённых репозиториев
+    def charge(self):
+        print(f"Charging the {self.make} {self.model} with {self.battery_capacity} kWh")
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitAmmend.png)
+my_electric_car = ElectricCar("Tesla", "Model S", 75)
+my_electric_car.drive()
+my_electric_car.charge()
+```
+### Результат.
 
-
-### Выводы
-
-Пробуем удалять файлы и ветви
-
-## 10 Отслеживание изменений в коммитах
-
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitCommit.png)
-
-### Выводы
-
-Изучил способ определения изменений в каммите
-
-## 11 Возвращение файла к предыдущему (определённому) состоянию
-
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitCommit.png)
-
-### Выводы
-
-Научился возвращать файл в предыдущие или иное сохранённое состояние
-
-## 12 Возвращение к предыдущему коммиту
-
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/1.png)
+![Меню](images/task3.png)
 
 ### Выводы
 
-Научился возвращаться к конкретному коммиту
+Создали новый класс “ElectricCar” с методом “charge” и атрибутом емкость батареи
+  
+## Лабораторная работа №4
+### Реализуйте инкапсуляцию для класса, созданного в первом задании.
+### Создайте защищенный атрибут производителя и приватный атрибут
+### модели. Вызовите защищенный атрибут и заставьте машину поехать.
+### Напишите комментарии для кода, объясняющие его работу.
+### Результатом выполнения задания будет листинг кода с комментариями
+### и получившийся вывод в консоль.
 
-## 13 Исправление коммита
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/2.png)
+```python
+class Car:
+    def __init__(self, make, model):
+        self._make = make
+        self.__model = model
+
+    def drive(self):
+        print(f"Driving the {self._make} {self.__model}")
+
+my_car = Car("Toyota", "Corolla")
+
+print(my_car._make)
+my_car.drive()
+```
+### Результат.
+
+![Меню](images/task4.png)
 
 ### Выводы
 
-## 14 Разрешение конфликтов при слиянии
+добавили инкапсуляцию, сделав атрибуты приватными
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/3.png)
+## Лабораторная работа №5
+### Реализуйте полиморфизм создав основной (общий) класс “Shape”, а
+### также еще два класса “Rectangle” и “Circle”. Внутри последних двух
+### классов реализуйте методы для подсчета площади фигуры. После этого
+### создайте массив с фигурами, поместите туда круг и прямоугольник, затем при помощи цикла выведите их площади. Напишите
+### комментарии для кода, объясняющие его работу. Результатом
+### выполнения задания будет листинг кода с комментариями и
+### получившийся вывод в консоль.
+
+
+
+```python
+class Shape:
+    def area(self):
+        pass
+
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+my_rectangle = Rectangle(5, 4)
+my_circle = Circle(5)
+
+print(my_rectangle.area())
+print(my_circle.area())
+```
+### Результат.
+
+![Меню](images/task5.png)
 
 ### Выводы
 
-Слияние выполнено успешно
+добавили два класса наследника, где переопределили метод area, таким образом применив полиморфизм
 
-## 15 Настройка gitignore
+## Самостоятельная работа №1
+### Самостоятельно создайте класс и его объект. Они должны
+### отличаться, от тех, что указаны в теоретическом материале
+### (методичке) и лабораторных заданиях. Результатом выполнения
+### задания будет листинг кода и получившийся вывод консоли.
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/4.png)
+```python
+class Animal:
+    def __init__(self, hp):
+        self.hp = hp
+
+    def get_hp(self):
+        return self.hp
+
+my_animal = Animal(5)
+print(my_animal.get_hp())
+```
+### Результат.
+
+![Меню](images/s-task1.png)
 
 ### Выводы
 
-Освоил настройку gitignore
+1. `class Animal:` создаем класс Animal
+2. `def __init__(self, hp):` конструктор класса
+3. `my_animal = Animal(5)` создаем объект класса
+  
+## Самостоятельная работа №2
+### Самостоятельно создайте атрибуты и методы для ранее созданного
+### класса. Они должны отличаться, от тех, что указаны в
+### теоретическом материале (методичке) и лабораторных заданиях.
+### Результатом выполнения задания будет листинг кода и
+### получившийся вывод консоли.
+
+```python
+class Animal:
+    def __init__(self, hp, voice):
+        self.hp = hp
+        self.voice = voice
+
+    def get_hp(self):
+        return self.hp
+
+    def say(self):
+        return self.voice
+
+my_animal = Animal(5, "я животное")
+print(my_animal.get_hp())
+print(my_animal.say())
+```
+### Результат.
+
+![Меню](images/s-task2.png)
+
+### Выводы
+
+1. `def __init__(self, hp, voice):` добавил атрибут voice (голос)
+2. `def say(self):` добавил метод say, который возвращает voice
+  
+## Самостоятельная работа №3
+### Самостоятельно реализуйте наследование, продолжая работать с
+### ранее созданным классом. Оно должно отличаться, от того, что
+### указано в теоретическом материале (методичке) и лабораторных
+### заданиях. Результатом выполнения задания будет листинг кода и
+### получившийся вывод консоли.
+
+
+```python
+class Animal:
+    def __init__(self, hp):
+        self.hp = hp
+        self.voice = "я животное"
+
+    def get_hp(self):
+        return self.hp
+
+    def say(self):
+        return self.voice
+
+class Dog(Animal):
+    def __init__(self, hp):
+        super().__init__(hp)
+        self.voice = "гав!"
+
+my_animal = Animal(5)
+my_dog= Dog(10)
+
+print(my_animal.say())
+print(my_dog.say())
+```
+### Результат.
+
+![Меню](images/s-task3.png)
+
+### Выводы
+
+1. `class Dog(Animal):` создаем класс Dog у наследуемый от класса Animal
+2. `super().__init__(hp)` передаем аргумент в конструктор родительского класса
+3. `self.voice = "гав!"` переопределяем voice 
+4. `my_dog= Dog(10)` создаем объект класса Dog
+  
+## Самостоятельная работа №4
+### Самостоятельно реализуйте инкапсуляцию, продолжая работать с
+### ранее созданным классом. Она должна отличаться, от того, что
+### указана в теоретическом материале (методичке) и лабораторных
+### заданиях. Результатом выполнения задания будет листинг кода и
+### получившийся вывод консоли.
+
+```python
+class Animal:
+    def __init__(self, hp):
+        self.__hp = hp  
+        self.voice = "я животное"
+
+    def get_hp(self):
+        return self.__hp
+
+    def set_hp(self, new_hp):
+        if new_hp >= 0:  
+            self.__hp = new_hp
+        else:
+            print("Значение здоровья не может быть отрицательным")
+
+    def say(self):
+        return self.voice
+
+class Dog(Animal):
+    def __init__(self, hp):
+        super().__init__(hp)
+        self.voice = "гав!"
+
+my_animal = Animal(5)
+my_dog = Dog(10)
+
+print(my_animal.say())  
+print(my_dog.say())      
+
+print(my_animal.get_hp())  
+my_animal.set_hp(8)       
+print(my_animal.get_hp())  
+my_animal.set_hp(-3)
+```
+### Результат.
+
+![Меню](images/s-task4.png)
+
+### Выводы
+
+1. `self.__hp = hp` делаем hp приватным
+2. `def get_hp(self):` добавляем геттер
+3. `def set_hp(self, new_hp):` добавляем сеттер
+  
+## Самостоятельная работа №5
+### Самостоятельно реализуйте полиморфизм. Он должен отличаться, от того, что указан в теоретическом материале (методичке) и
+### лабораторных заданиях. Результатом выполнения задания будет
+### листинг кода и получившийся вывод консоли.
+
+```python
+class Animal:
+    def __init__(self, hp):
+        self.__hp = hp  
+
+    def get_hp(self):
+        return self.__hp
+
+    def set_hp(self, new_hp):
+        if new_hp >= 0:
+            self.__hp = new_hp
+        else:
+            print("Значение здоровья не может быть отрицательным")
+
+    def say(self):
+        return "я животное" 
+
+
+class Dog(Animal):
+    def __init__(self, hp):
+        super().__init__(hp)
+
+    def say(self):
+        return "гав!"  
+
+
+class Cat(Animal):
+    def __init__(self, hp):
+        super().__init__(hp)
+
+    def say(self):
+        return "мяу!"  
+
+animals = [Animal(5), Dog(10), Cat(8)]
+
+for animal in animals:
+    print(animal.say())  
+```
+
+### Результат.
+
+![Меню](images/s-task5.png)
+
+### Выводы
+
+переопределяем метод say в Dog и Cat, таким образом получаем полиморфизм
 
 ## Общие выводы по теме
-Таким образом при выполнении данной работы, я освоил установку python, pycharm, git на свой пк. Установка произведена
-успешно. Тк я уже пользовался раннее GitHub и Git они уже были более менее настроены. После изучения данной темы еще лучше
-освоил работу в консольном git, но еще раз подчеркнул для себя, что GitHub desktop более дружелюбен к пользователю
-буду пользоваться ей. Все части задания выполнены успешно.
+Базово освоил работу в ооп стиле на python. А если точнее познакомился с классами, их конструкторами, полиморфизмом и инкапсуляцией, а также наследованием
